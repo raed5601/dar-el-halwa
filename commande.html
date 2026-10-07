@@ -31,8 +31,6 @@
         <h2>Commander un gâteau personnalisé</h2>
 
         <form action="traitement.php" method="post">
-
-            <!-- Groupe 1 : Vos coordonnées -->
             <fieldset>
                 <legend>Vos coordonnées</legend>
 
@@ -78,7 +76,6 @@
                 </p>
             </fieldset>
 
-            <!-- Groupe 2 : Votre gâteau -->
             <fieldset>
                 <legend>Votre gâteau</legend>
 
@@ -97,10 +94,7 @@
                     <label for="occ-autre">Autre</label>
                 </fieldset>
 
-                <p>
-                    <label for="date_retrait">Date de retrait :</label>
-                    <input type="date" id="date_retrait" name="date_retrait" min="2026-09-01" required>
-                </p>
+                
 
                 <p>
                     <label for="parts">Nombre de parts :</label>
@@ -143,11 +137,14 @@
                 </p>
             </fieldset>
 
-            <!-- Groupe 3 : Confirmation & Décors -->
             <fieldset>
                 <legend>Confirmation</legend>
 
                 <p>
+                    <p>
+                        <label for="date_retrait">Date de retrait :</label>
+                        <input type="date" id="date_retrait" name="date_retrait" min="2026-09-01" required>
+                    </p>
                     <label for="decors">Langages de décoration :</label>
                     <select multiple size="4" id="decors" name="decors[]">
                         <optgroup label="Décors sucrés">
@@ -166,7 +163,6 @@
                     <textarea id="precisions" name="precisions" rows="4" cols="40" maxlength="200"></textarea>
                 </p>
 
-                <!-- Extensions bonus -->
                 <p>
                     <label for="website">Site web ou page Instagram :</label>
                     <input type="url" id="website" name="website" placeholder="https://instagram.com/darelhalwa">
@@ -178,7 +174,6 @@
                 </p>
             </fieldset>
 
-            <!-- Boutons de validation -->
             <p>
                 <button type="submit">Envoyer ma commande</button>
                 <button type="reset">Tout effacer</button>
