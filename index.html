@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dar El Halwa – Pâtisserie fine tunisienne</title>
@@ -8,9 +9,9 @@
 <body>
 
     <header>
-        <h1>Dar El Halwa</h1>
+        <h1 >Dar El Halwa</h1>
         <figure>
-            <img src="image/pubpatis.jpg" alt="Vitrine garnie de mignardises, cornes de gazelle et makrouds">
+            <img src="image/pubpatis.jpg" alt="Vitrine garnie de mignardises, cornes de gazelle et makrouds" width="300" height="150">
             <figcaption>Notre vitrine de mignardises traditionnelles.</figcaption>
         </figure>
         <p>Pâtisserie fine tunisienne depuis 1900</p>
@@ -25,9 +26,11 @@
             <li><a href="carte.html">Carte des prix</a></li>
             <li><a href="commande.html">Commander</a></li>
         </ul>
+
     </nav>
 
     <main>
+        <a href="#sommaire"><img src="image/Gemini_Generated_Image_3rbjqa3rbjqa3rbj-removebg-preview.png" style="position: fixed;right: 0;top: 90%;width: 70px;" ></a>
         <section id="apropos">
             <h2>À propos</h2>
             <p>Un monde magique de gâteries du quotidien et de petits plaisirs de la bouche. Nous proposons une gamme variée de mignardises, pâtisseries traditionnelles, chocolats, macarons sucrés et salés, brochettes et verrines.</p>
@@ -35,14 +38,29 @@
         </section>
 
         <section id="produits">
-            <h2>Nos produits</h2>
-            <ul>
-                <li><strong>Le sucré fin</strong> (<em>gâteaux, morceaux, bouchées sucrées, glaces</em>)</li>
-                <li><strong>Le salé fin</strong> (<em>bouchées froides, brochettes, verrines froides</em>)</li>
-                <li><strong>Pains &amp; viennoiseries</strong> (<em>pains, viennoiseries</em>)</li>
-                <li><strong>L'épicerie fine</strong> (<em>confitures, miels, granola</em>)</li>
+            <h2>Produits</h2>
+            <ul class="grille-produits">
+                <li class="carte">
+                    <h3>Le sucré fin</h3>
+                    <p>Gâteaux, morceaux, bouchées sucrées, glaces.</p>
+                    <p class="prix">à partir de 4 DT</p>
+                </li>
+                <li class="carte">
+                    <h3>Le salé fin</h3>
+                    <p>Bouchées froides, brochettes, verrines froides.</p>
+                    <p class="prix">à partir de 30 DT</p>
+                </li>
+                <li class="carte">
+                    <h3>Pains & viennoiseries</h3>
+                    <p>Pains, viennoiseries.</p>
+                    <p class="prix">à partir de 1 DT</p>
+                </li>
+                <li class="carte">
+                    <h3>L'épicerie fine</h3>
+                    <p>Confitures, miels, granola.</p>
+                    <p class="prix">à partir de 10 DT</p>
+                </li>
             </ul>
-            <p><a href="#sommaire">↑ Retour au sommaire</a></p>
         </section>
 
         <section id="services">
@@ -57,7 +75,6 @@
                 <dt>Conseil</dt>
                 <dd>Pour toute commande supérieure à 500 DT, une conseillère vous contacte par téléphone pour vous orienter.</dd>
             </dl>
-            <p><a href="#sommaire">↑ Retour au sommaire</a></p>
         </section>
 
         <section id="temoignages">
@@ -77,7 +94,6 @@
                 </audio>
                 <figcaption>Écoutez les avis de nos clients</figcaption>
             </figure>
-            <p><a href="#sommaire">↑ Retour au sommaire</a></p>
         </section>
 
         <section id="contact">
@@ -87,18 +103,30 @@
                 <li><a href="mailto:contact@darelhalwa.tn?subject=Demande%20de%20renseignements">contact@darelhalwa.tn</a></li>
                 <li><a href="tel:+21674000000">+216 74 000 000</a></li>
             </ol>
-            <p><a href="#sommaire">↑ Retour au sommaire</a></p>
         </section>
     </main>
 
     <footer>
-        <p>Dar El Halwa &copy; 2026</p>
-        <p>Suivez-nous : 
+    <div>
+        <h3>Coordonnées</h3>
+        <p>Route de Tunis km 5, Sfax 3044, Tunisie</p>
+        <p>contact@darelhalwa.tn</p>
+        <p>+216 74 000 000</p>
+    </div>
+    <div>
+        <h3>Suivez-nous</h3>
+        <p>
             <a href="https://www.facebook.com/darelhalwa" target="_blank" rel="noopener">Facebook</a> | 
             <a href="https://www.instagram.com/darelhalwa" target="_blank" rel="noopener">Instagram</a> | 
             <a href="https://www.linkedin.com/company/darelhalwa" target="_blank" rel="noopener">LinkedIn</a>
         </p>
-    </footer>
+    </div>
+    <div>
+        <h3>Horaires</h3>
+        <p>Samedi – Jeudi : 8h – 20h</p>
+        <p>Vendredi : 8h – 12h</p>
+    </div>
+</footer>
 
 </body>
 </html>
